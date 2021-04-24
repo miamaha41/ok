@@ -1,0 +1,25 @@
+    1  ls
+    2  cd ..
+    3  cd..
+    4  cd..
+    5  cd ./Desktop/JS112/
+    6  history
+    7  mkdir gh
+    8  ls
+    9  mkdir gh/hb
+   10  ls
+   11  cd gh
+   12  ls
+   13  rm -1 hb
+   14  rm -r hb
+   15  ls
+   16  cd ..
+   17  rm -r gh
+   18  ls
+   19  touch  index.html
+   20  ls
+   21  code.
+   22  .code
+   23  clear
+   24  history
+   25  history > hocgit.txt

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // Array la chuoi cac phan tu 
+        var a = [5, "hello", true, false]; // danh chi so tu 0 => n-1  , true = 1 , false = 0
+        console.log(a[0]) // truy cap den gia tri cua vi tri 0 
+        console.log(a.length)
+        for (var i = 0; i < a.length; ++i) {
+            console.log(a[i]);
+        }
+
+        var i = 0;
+        while (i < a.length) {
+            console.log(a[i]);
+            ++i;
+        }
+        // them 1 phan tu moi 
+        let mang = []
+        mang[0] = 55
+        for (let i = 0; i < 100; ++i) {
+            mang[i] = 1
+        }
+        mang.push(5) // truyen 1 gia tri moi vao cuoi mang 
+        mang.pop() // xoa phan tu cuoi mang  
+        mang.unshift(5) // truyen 1 gia tri moi vao dau mang 
+        mang.shift() // xoa phan tu o dau 
+        mang.sort() // sap xep tamg dan ?????
+        let mangSort = [1,2,3,333]
+        mang.concat()
+        // map , fillter , reduce
+        
+        a.forEach(function (value, index) {
+            console.log(index, value * 2)  // callback truyen function vao trong function duoi dang bien  
+        })  // 
+        for (let i = 0; i < a.lenght; ++i) {
+            if ("hello" == a[i]) {
+                console.log("Tim thay Hello o vi tri " + i) // tim kiem tuyen tinh/ tuan tu (tim theo chieu tang dan cua day )
+            }
+        }
+        let num = [5, 4, 9, 7, 3, 1]
+        let max = num[0]
+        for (let i = 1; i < num.lenght; i++) {
+            if (max < num[i]) {
+                max = num[i]
+            }
+        }
+        console.log(max)
+        for (let i = 1; i < num.lenght; ++i) {
+            if (num[i] == max) {
+                console.log("vi tri cua nguoi diem cao nhat ", i)
+            }
+        }
+
+        // = vong for nay
+        //    function In(x) {
+        //        console.log(x)
+        //    }
+        //    for(var i = 0 ; i < a.length ; ++ i){
+        //         In(a[i])
+        //     }
+
+        // function la nhom cac cau lenh cung viet de xu li 1 chuc nang
+
+        function hello(x, y) { // x  la param tham so truyen vao function
+            console.log(x + " " + y)
+        }
+        let sum = function (a, b) { // cach khai bao expressfunction => function cung la 1 bien 
+            return a + b;
+        }
+
+
+        console.log(sum(1, 2))
+        // function scopes { }, cac bien viet trong function thi ben ngoai deu ko dung dk
+        // closure cac bien viet ben ngoai function scopes deu dung duoc ben trong {}
+        // hoisting tat ca cac bien khi khong khai bao trong function scopes thi deu bi day len tren dau
+        // loi hoisting kho kiem soat bien , bo nho
+        if (true) {
+            var t = 9 // gan lai gia tri cua t thoi, thuc chat da khai bao o tren dau , day la loi~ cua js
+
+        }
+        console.log(t)
+        let k = 8 // khai bao bang let tu cho nao thi ben duoi hoac trong scope moi dung` dk , de chi phai khai bao 1 lan 
+        // goi ham 
+        var x = "Long"
+        hello(x)
+        hello("hieu", "Thai Nguyen")
+        function add(a, b = 9) { // khai bao tham so mac dinh nen de o cuoi 
+            let c = a + b;
+            return c; // return o dau thi dung lai o do 
+        }
+        let total = add(5)
+        console.log(total)
+        function light(x) {
+            if (x == "hong") {
+                console.log("Bong den bat");
+                return;
+            }
+            if (x) {
+                console.log("Bong den bat"); // khi chua co return trong function thi js tu hieu return undefied
+            } else {
+                console.log("Bong den tat");
+            }
+        }
+        light(false)
+    </script>
+</body>
+
+</html>

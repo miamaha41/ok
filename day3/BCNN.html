@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = parseInt(prompt("Mời bạn nhập số thứ 1 : ")) ;
+        var b = parseInt(prompt("Mời bạn nhập số thứ 2 : ")) ;
+        var ucln = 1 ;
+        var bcnn = (a>b)? a : b ;
+         var c = a 
+         var d = b
+        if (a == 0 || b == 0){
+            console.log("Ước chung lớn nhất " + c + " & " +d + " là :" + a+b );
+        }
+        
+        // while (a != 0 && b != 0){
+        //     if(bcnn % a == 0 && bcnn % b == 0){
+        //        break ;
+        //     }
+        //     bcnn ++ ;
+        // }
+
+        // for (var i = 1 ; i <= a && i <= b ; i++){
+        //      if( a % i == 0 && b % i == 0 && ucln < i ){
+        //         ucln = i;
+        //         bcnn = a*b/ucln ;
+        //         break;
+        //     }
+        // }
+       else { while(a != b) {
+            if(a > b ){
+                a = a - b ;
+            }else {
+                b = b - a ; 
+            }
+        }
+         bcnn = c*d/a
+         console.log("Bội số chung nhỏ nhất của " + c + " & " +d +" là : " +bcnn);   
+         console.log("Ước chung lớn nhất " + c + " & " +d + " là :" + a );
+       }
+    </script>
+</body>
+</html>

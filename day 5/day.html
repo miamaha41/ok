@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let a = [1, 5, 3]
+        let b = []
+        // map tao 1 man moi u man co san theo 1 con thuc
+        // let newa = a.map(function (value) {
+        //     let res = value * 2
+        //     return res
+        // })
+
+        // function Map(arr) {
+        //     for (let i = 0; i < arr.length; ++i) {
+        //         b.push(arr[i] + arr[i] * 0.05)
+        //     }
+        //     return b
+        // }
+        //  a.forEach(function (value){
+        //      b.push(value +value)
+        //  })
+        // console.log(newa)
+        // loc thanh 1 mang moi voi 1 dieu kien 
+        // let newfill = a.filter(function (value) {
+        //     if (value % 2 == 0) {
+        //         return {} // truthy
+        //     }
+        //     return undefined // falsy
+        // })
+        let c = [1000, 5000, 3000]
+        for (let value of c) {
+            console.log(value)
+        }
+
+
+        let sum = a.reduce(function (pre, cur) {
+            cur += pre
+            return cur
+        }, 0) // ban dau 0
+        console.log(sum)
+        // khai bao object  : cap key : value 
+
+        let co = {
+            mausac: ["black", "xanh", "do"],
+            tuoi: 5,
+            isFly: false,
+            speak: function () {
+                console.log("Quac quac");
+                return "keu gi ma keu";
+            },
+            introduce: function () {
+                console.log("toi co rat nhieu mau sac", this.mausac.join("+"));
+            }
+        }
+        console.log(co.introduce());
+        for (const key in co) {
+            if (typeof co[key] == "function") {
+                console.log(co[key]());
+            } else {
+                console.log(co[key]);
+            }
+        }
+        let  arr = {
+            value : [4,6,7] ,
+            length : 3 ,
+            indexOf : function (gt){
+                for (let i = 0; i < this.value.length; i++) {
+                    if(this.value[i] === gt ){
+                        return i;
+                    }
+                    return -1 ;
+                }
+            },
+            push : function (gt) {
+                this.value[this.length] = gt
+                this.length++   ;
+
+            }
+
+        }
+        console.log(arr.value);
+        console.log(arr.push(1000));
+        console.log(arr.value);
+          // trong object co the co array hay 1 object khac, trong mang cung co the co object
+
+        
+
+    </script>
+</body>
+
+</html>

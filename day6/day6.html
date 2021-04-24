@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //  
+        let a = [1, 2, 3, 4]
+        let x = {
+            id: 100
+        }
+        let d = [10,1000,...a] // dai vao mang moi [10,1000,1,2,3,4]
+        let y = { x }
+        y.id = 1000
+        console.log(x)
+        let b = Object.assign({}, x); // tao ra 1 object moi co gia tri tuong duong voi gia tri cu ma o 2 vung nho khac nhau
+        console.log(b)
+        let c = Array.from(x) // ?
+
+    </script>
+</body>
+
+</html>
