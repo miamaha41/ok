@@ -1,0 +1,41 @@
+    1  ls
+    2  cd ..
+    3  cd..
+    4  cd..
+    5  cd ./Desktop/JS112/
+    6  history
+    7  mkdir gh
+    8  ls
+    9  mkdir gh/hb
+   10  ls
+   11  cd gh
+   12  ls
+   13  rm -1 hb
+   14  rm -r hb
+   15  ls
+   16  cd ..
+   17  rm -r gh
+   18  ls
+   19  touch  index.html
+   20  ls
+   21  git init
+   22  git add .
+   23  git clone
+   24  code .
+   25  git commit 
+   26  git add index.html
+   27  git push orgirin master
+   28  git add .
+   29  git add .
+   30  git commit -m hocgit
+   31  git push origin master
+   32  git remmote -v
+   33  git remote -v
+   34  git remote add origin
+   35  git remote add origin https://github.com/miamaha41/ok.git 
+   36  git push origin
+   37  git push origin master
+   38  gitgi
+   39  git pull origin master 
+   40  history
+   41  history > hocgit.txt
